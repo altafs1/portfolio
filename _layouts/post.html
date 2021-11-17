@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{{page.title}}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: Personal - v4.3.0
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+   
+    <div class="blog-single">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+            <h2>Blog</h2>
+            </div>
+
+            <div class="row">
+
+            <div class="col-lg-12 entries">
+
+                <article class="entry entry-single">
+
+                <div class="entry-img">
+                    <img src="/assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                </div>
+
+                <h2 class="entry-title">
+                    <a href="blog-single.html">{{page.title}}</a>
+                </h2>
+
+                <div class="entry-meta">
+                    <ul>
+                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">{{page.author}}</a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2021-01-01">{{page.date}}</time></a></li>
+                    </ul>
+                </div>
+
+                <div class="entry-content">
+                    {{content}}
+
+                </div>
+
+                <div class="entry-footer">
+                    
+                    <i class="bi bi-tags"></i>
+                    <ul class="tags">
+                        {%- for category in page.categories -%}
+                        <li><a href="#">{{category}}</a></li>
+                        {%- endfor -%}
+                    </ul>
+                     
+                </div>
+
+                </article><!-- End blog entry -->
+
+                <div class="blog-single-author d-flex align-items-center">
+                <img src="/assets/img/blog/blog-author.jpg" class="rounded-circle float-left" alt="">
+                <div>
+                    <h4>{{page.author}}</h4>
+                    <div class="social-links">
+                    <a href="https://github.com/{{page.githubUsername}}"><i class="bi bi-github"></i></a>
+                    <a href="https://facebook.com/{{page.facebookUsername}}"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/{{page.instagramUsername}}"><i class="biu bi-instagram"></i></a>
+                    </div>
+                    <p>
+                    {{page.authorDesc}}
+                    </p>
+                </div>
+                </div><!-- End blog author bio -->
+
+                <div class="blog-single-comments">
+
+                <div class="reply-form">
+                    <h4>Leave a Reply</h4>
+                    <p>Your email address will not be published. Required fields are marked * </p>
+                    <form action="">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                        <input name="name" type="text" class="form-control" placeholder="Your Name*">
+                        </div>
+                        <div class="col-md-6 form-group">
+                        <input name="email" type="text" class="form-control" placeholder="Your Email*">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col form-group">
+                        <textarea name="comment" class="form-control" placeholder="Your Comment*"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Reply</button>
+
+                    </form>
+
+                </div>
+
+                </div><!-- End blog comments -->
+
+            </div><!-- End blog entries list -->
+
+            </div>
+        </div>
+    </div>    
+
+<!-- Vendor JS Files -->
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="/assets/vendor/php-email-form/validate.js"></script>
+<script src="/assets/vendor/purecounter/purecounter.js"></script>
+<script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+<!-- Template Main JS File -->
+<script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>    
